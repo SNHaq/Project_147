@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rose the Robot</title>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+
+    <!--Camera-->
+    <a-entity position="0 0 17">
+        <a-camera></a-camera>
+    </a-entity>
+
+    <!--Sky-->
+    <a-sky color="lightblue"></a-sky>
+        
+    <!--Antennae-->
+    <a-entity>
+        <a-box 
+        color="pink"
+        width="0.6"
+        height="2"
+        position="0 10 1"
+        animation="property:rotation; to:-0.5 10 0; easing:linear; loop:true; dur:1000">
+    </a-box>
+    </a-entity>
+
+    <!--Antennae Top-->
+    <a-sphere
+        color="#FC8EAC"
+        radius="0.5"
+        position="0 11.7 1"
+        animation="property:rotation; to:0.5 10 0; easing:linear; loop:true; dur:1000">
+    </a-sphere>
+
+    <!--Head-->
+    <a-entity>
+        <a-box 
+        color="pink"
+        width="7"
+        height="5"
+        position="0 7 1">
+    </a-box>
+    </a-entity>
+
+    <!--Face-->
+    <a-entity>
+        <a-box 
+        color="#FC8EAC"
+        width="6"
+        height="4"
+        position="0 7 1">
+    </a-box>
+    </a-entity>
+
+    <!--Left Eye-->
+    <a-entity>
+        <a-sphere 
+        color="black"
+        radius="0.55"
+        position="-1 7.25 1">
+    </a-sphere>
+    </a-entity>
+
+    <!--Right Eye-->
+    <a-entity>
+        <a-sphere 
+        color="black"
+        radius="0.55"
+        position="1 7.25 1">
+    </a-sphere>
+    </a-entity>
+
+    <!--Neck-->
+    <a-box
+        color="#FC8EAC"
+        width="2"
+        height="1"
+        position="0 4 1"
+        >
+    </a-box>
+
+    <!--Body-->
+    <a-box
+        color="pink"
+        width="5"
+        height="7"
+        position="0 0 1"
+        >
+    </a-box>
+
+    <!--Inner Body-->
+    <a-box
+        color="#FC8EAC"
+        width="4"
+        height="6"
+        position="0 0 1"
+        >
+    </a-box>
+
+    <!--Left Arm-->
+    <a-cylinder 
+    position="-3.3 1.35 -3" 
+    radius="0.9" 
+    rotation="0 0 -20"
+    height="5" 
+    color="pink">
+    </a-cylinder>
+
+    <!--Right Arm-->
+    <a-cylinder 
+    position="3.3 1.35 -3" 
+    radius="0.9" 
+    rotation="0 0 20"
+    height="5" 
+    color="pink">
+    </a-cylinder>
+
+    <!--Left Leg-->
+    <a-cylinder
+        color="pink"
+        radius="1.13"
+        height="5"
+        position="-1.35 -6 1">
+    </a-cylinder>
+
+    <!--Right Leg-->
+    <a-cylinder
+        color="pink"
+        radius="1.13"
+        height="5"
+        position="1.35 -6 1">
+    </a-cylinder>
+
+    <!--Grass-->
+    <a-entity>
+        <a-box 
+        color="#5f9b49"
+        width="60"
+        height="7"
+        position="0 -12 0">
+    </a-box>
+    </a-entity>
+</a-scene>
+</body>
+
+</html>
